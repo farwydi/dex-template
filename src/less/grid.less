@@ -8,11 +8,14 @@ html {
   box-sizing: border-box;
   margin: 0 auto;
   background-color: @gray900Color;
+  @media (min-width: @desktop-small) {
+    width: @desktop-small-width;
+  }
   @media (min-width: @desktop-medium) {
-    width: 1280px;
+    width: @desktop-medium-width;
   }
   @media (min-width: @desktop-large) {
-    width: 1539px;
+    width: @desktop-large-width;
   }
 }
 

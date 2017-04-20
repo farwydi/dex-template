@@ -7,7 +7,13 @@ html {
 h1 {
   font-weight: 300;
 }
-@media (min-width: 1500px) {
+@media (min-width: 1200px) {
+  .display-4,
+  h1 {
+    font-size: 112.99999995px;
+  }
+}
+@media (min-width: 1580px) {
   .display-4,
   h1 {
     font-size: 112.99999995px;
@@ -23,7 +29,13 @@ h1 {
 h2 {
   font-weight: 400;
 }
-@media (min-width: 1500px) {
+@media (min-width: 1200px) {
+  .display-3,
+  h2 {
+    font-size: 56.49999998px;
+  }
+}
+@media (min-width: 1580px) {
   .display-3,
   h2 {
     font-size: 56.49999998px;
@@ -39,7 +51,13 @@ h2 {
 h3 {
   font-weight: 400;
 }
-@media (min-width: 1500px) {
+@media (min-width: 1200px) {
+  .display-2,
+  h3 {
+    font-size: 45.4017857px;
+  }
+}
+@media (min-width: 1580px) {
   .display-2,
   h3 {
     font-size: 45.4017857px;
@@ -55,7 +73,13 @@ h3 {
 h4 {
   font-weight: 400;
 }
-@media (min-width: 1500px) {
+@media (min-width: 1200px) {
+  .display-1,
+  h4 {
+    font-size: 34.30357141px;
+  }
+}
+@media (min-width: 1580px) {
   .display-1,
   h4 {
     font-size: 34.30357141px;
@@ -70,7 +94,12 @@ h4 {
 .headling {
   font-weight: 400;
 }
-@media (min-width: 1500px) {
+@media (min-width: 1200px) {
+  .headling {
+    font-size: 24.2142857px;
+  }
+}
+@media (min-width: 1580px) {
   .headling {
     font-size: 24.2142857px;
   }
@@ -83,7 +112,12 @@ h4 {
 .title {
   font-weight: 500;
 }
-@media (min-width: 1500px) {
+@media (min-width: 1200px) {
+  .title {
+    font-size: 20.17857142px;
+  }
+}
+@media (min-width: 1580px) {
   .title {
     font-size: 20.17857142px;
   }
@@ -96,7 +130,12 @@ h4 {
 .subheading {
   font-weight: 400;
 }
-@media (min-width: 1500px) {
+@media (min-width: 1200px) {
+  .subheading {
+    font-size: 15.13392856px;
+  }
+}
+@media (min-width: 1580px) {
   .subheading {
     font-size: 15.13392856px;
   }
@@ -109,7 +148,12 @@ h4 {
 .body-2 {
   font-weight: 500;
 }
-@media (min-width: 1500px) {
+@media (min-width: 1200px) {
+  .body-2 {
+    font-size: 13.11607142px;
+  }
+}
+@media (min-width: 1580px) {
   .body-2 {
     font-size: 13.11607142px;
   }
@@ -122,7 +166,12 @@ h4 {
 .body-1 {
   font-weight: 400;
 }
-@media (min-width: 1500px) {
+@media (min-width: 1200px) {
+  .body-1 {
+    font-size: 13.11607142px;
+  }
+}
+@media (min-width: 1580px) {
   .body-1 {
     font-size: 13.11607142px;
   }
@@ -135,7 +184,12 @@ h4 {
 .caption {
   font-weight: 400;
 }
-@media (min-width: 1500px) {
+@media (min-width: 1200px) {
+  .caption {
+    font-size: 12.10714285px;
+  }
+}
+@media (min-width: 1580px) {
   .caption {
     font-size: 12.10714285px;
   }
@@ -145,19 +199,17 @@ h4 {
     font-size: 15.32142857px;
   }
 }
-.button {
-  font-weight: 500;
-  text-transform: uppercase;
-}
-@media (min-width: 1500px) {
-  .button {
-    font-size: 14.12499999px;
-  }
-}
-@media (min-width: 1900px) {
-  .button {
-    font-size: 17.875px;
-  }
+.dex-material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
 }
 body,
 html {
@@ -166,7 +218,13 @@ html {
   margin: 0 auto;
   background-color: #212121;
 }
-@media (min-width: 1500px) {
+@media (min-width: 1200px) {
+  body,
+  html {
+    width: 1024px;
+  }
+}
+@media (min-width: 1580px) {
   body,
   html {
     width: 1280px;
@@ -271,7 +329,12 @@ table caption {
   font-weight: 500;
   border-bottom: 1px solid #FAFAFA;
 }
-@media (min-width: 1500px) {
+@media (min-width: 1200px) {
+  table caption {
+    font-size: 20.17857142px;
+  }
+}
+@media (min-width: 1580px) {
   table caption {
     font-size: 20.17857142px;
   }
@@ -288,7 +351,13 @@ tr th {
   font-weight: 500;
   border-bottom: 1px solid #9E9E9E;
 }
-@media (min-width: 1500px) {
+@media (min-width: 1200px) {
+  tr td,
+  tr th {
+    font-size: 13.11607142px;
+  }
+}
+@media (min-width: 1580px) {
   tr td,
   tr th {
     font-size: 13.11607142px;
@@ -303,7 +372,12 @@ tr th {
 tr td {
   font-weight: 400;
 }
-@media (min-width: 1500px) {
+@media (min-width: 1200px) {
+  tr td {
+    font-size: 13.11607142px;
+  }
+}
+@media (min-width: 1580px) {
   tr td {
     font-size: 13.11607142px;
   }

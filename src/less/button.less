@@ -1,0 +1,25 @@
+@import "color";
+@import "size";
+
+button, .button {
+  background-color: @gray400Color;
+  padding: @padding;
+  @media (min-width: @desktop-small) {
+    font-size: @desktop-small-sp*14*1px;
+  }
+  @media (min-width: @desktop-medium) {
+    font-size: @desktop-medium-sp*14*1px;
+  }
+  @media (min-width: @desktop-large) {
+    font-size: @desktop-large-sp*14*1px;
+  }
+  font-weight: 500;
+  text-transform: uppercase;
+  color: @gray900Color;
+
+  &:hover {
+      color: @fontColor;
+      background-color: @accentColor;
+      cursor: pointer;
+  }
+}
