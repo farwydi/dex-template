@@ -1,4 +1,5 @@
-@sp: 1.276785714;
+@import "color";
+@import "size";
 
 body,
 html {
@@ -6,58 +7,117 @@ html {
   font-family: 'Roboto', sans-serif;
 }
 
-h1, .display-4 {
-  font-size: @sp*112*1px;
+.display-4,
+h1 {
+  @media (min-width: @desktop-medium) {
+    font-size: @desktop-medium-sp*112*1px;
+  }
+  @media (min-width: @desktop-large) {
+    font-size: @desktop-large-sp*112*1px;
+  }
   font-weight: 300;
 }
 
-h2, .display-3 {
-  font-size: @sp*56*1px;
+.display-3,
+h2 {
+  @media (min-width: @desktop-medium) {
+    font-size: @desktop-medium-sp*56*1px;
+  }
+  @media (min-width: @desktop-large) {
+    font-size: @desktop-large-sp*56*1px;
+  }
   font-weight: 400;
 }
 
-h3, .display-2 {
-  font-size: @sp*45*1px;
+.display-2,
+h3 {
+  @media (min-width: @desktop-medium) {
+    font-size: @desktop-medium-sp*45*1px;
+  }
+  @media (min-width: @desktop-large) {
+    font-size: @desktop-large-sp*45*1px;
+  }
   font-weight: 400;
 }
 
-h4, .display-1 {
-  font-size: @sp*34*1px;
+.display-1,
+h4 {
+  @media (min-width: @desktop-medium) {
+    font-size: @desktop-medium-sp*34*1px;
+  }
+  @media (min-width: @desktop-large) {
+    font-size: @desktop-large-sp*34*1px;
+  }
   font-weight: 400;
 }
 
 .headling {
-  font-size: @sp*24*1px;
+  @media (min-width: @desktop-medium) {
+    font-size: @desktop-medium-sp*24*1px;
+  }
+  @media (min-width: @desktop-large) {
+    font-size: @desktop-large-sp*24*1px;
+  }
   font-weight: 400;
 }
 
 .title {
-  font-size: @sp*20*1px;
+  @media (min-width: @desktop-medium) {
+    font-size: @desktop-medium-sp*20*1px;
+  }
+  @media (min-width: @desktop-large) {
+    font-size: @desktop-large-sp*20*1px;
+  }
   font-weight: 500;
 }
 
 .subheading {
-  font-size: @sp*15*1px;
+  @media (min-width: @desktop-medium) {
+    font-size: @desktop-medium-sp*15*1px;
+  }
+  @media (min-width: @desktop-large) {
+    font-size: @desktop-large-sp*15*1px;
+  }
   font-weight: 400;
 }
 
 .body-2 {
-  font-size: @sp*13*1px;
+  @media (min-width: @desktop-medium) {
+    font-size: @desktop-medium-sp*13*1px;
+  }
+  @media (min-width: @desktop-large) {
+    font-size: @desktop-large-sp*13*1px;
+  }
   font-weight: 500;
 }
 
 .body-1 {
-  font-size: @sp*13*1px;
+  @media (min-width: @desktop-medium) {
+    font-size: @desktop-medium-sp*13*1px;
+  }
+  @media (min-width: @desktop-large) {
+    font-size: @desktop-large-sp*13*1px;
+  }
   font-weight: 400;
 }
 
 .caption {
-  font-size: @sp*12*1px;
+  @media (min-width: @desktop-medium) {
+    font-size: @desktop-medium-sp*12*1px;
+  }
+  @media (min-width: @desktop-large) {
+    font-size: @desktop-large-sp*12*1px;
+  }
   font-weight: 400;
 }
 
 .button {
-  font-size: @sp*14*1px;
+  @media (min-width: @desktop-medium) {
+    font-size: @desktop-medium-sp*14*1px;
+  }
+  @media (min-width: @desktop-large) {
+    font-size: @desktop-large-sp*14*1px;
+  }
   font-weight: 500;
   text-transform: uppercase;
 }

@@ -3,62 +3,180 @@ html {
   color: #FAFAFA;
   font-family: 'Roboto', sans-serif;
 }
-h1,
-.display-4 {
-  font-size: 142.99999997px;
+.display-4,
+h1 {
   font-weight: 300;
 }
-h2,
-.display-3 {
-  font-size: 71.49999998px;
+@media (min-width: 1500px) {
+  .display-4,
+  h1 {
+    font-size: 112.99999995px;
+  }
+}
+@media (min-width: 1900px) {
+  .display-4,
+  h1 {
+    font-size: 142.99999997px;
+  }
+}
+.display-3,
+h2 {
   font-weight: 400;
 }
-h3,
-.display-2 {
-  font-size: 57.45535713px;
+@media (min-width: 1500px) {
+  .display-3,
+  h2 {
+    font-size: 56.49999998px;
+  }
+}
+@media (min-width: 1900px) {
+  .display-3,
+  h2 {
+    font-size: 71.49999998px;
+  }
+}
+.display-2,
+h3 {
   font-weight: 400;
 }
-h4,
-.display-1 {
-  font-size: 43.41071428px;
+@media (min-width: 1500px) {
+  .display-2,
+  h3 {
+    font-size: 45.4017857px;
+  }
+}
+@media (min-width: 1900px) {
+  .display-2,
+  h3 {
+    font-size: 57.45535713px;
+  }
+}
+.display-1,
+h4 {
   font-weight: 400;
+}
+@media (min-width: 1500px) {
+  .display-1,
+  h4 {
+    font-size: 34.30357141px;
+  }
+}
+@media (min-width: 1900px) {
+  .display-1,
+  h4 {
+    font-size: 43.41071428px;
+  }
 }
 .headling {
-  font-size: 30.64285714px;
   font-weight: 400;
+}
+@media (min-width: 1500px) {
+  .headling {
+    font-size: 24.2142857px;
+  }
+}
+@media (min-width: 1900px) {
+  .headling {
+    font-size: 30.64285714px;
+  }
 }
 .title {
-  font-size: 25.53571428px;
   font-weight: 500;
+}
+@media (min-width: 1500px) {
+  .title {
+    font-size: 20.17857142px;
+  }
+}
+@media (min-width: 1900px) {
+  .title {
+    font-size: 25.53571428px;
+  }
 }
 .subheading {
-  font-size: 19.15178571px;
   font-weight: 400;
+}
+@media (min-width: 1500px) {
+  .subheading {
+    font-size: 15.13392856px;
+  }
+}
+@media (min-width: 1900px) {
+  .subheading {
+    font-size: 19.15178571px;
+  }
 }
 .body-2 {
-  font-size: 16.59821428px;
   font-weight: 500;
+}
+@media (min-width: 1500px) {
+  .body-2 {
+    font-size: 13.11607142px;
+  }
+}
+@media (min-width: 1900px) {
+  .body-2 {
+    font-size: 16.59821428px;
+  }
 }
 .body-1 {
-  font-size: 16.59821428px;
   font-weight: 400;
+}
+@media (min-width: 1500px) {
+  .body-1 {
+    font-size: 13.11607142px;
+  }
+}
+@media (min-width: 1900px) {
+  .body-1 {
+    font-size: 16.59821428px;
+  }
 }
 .caption {
-  font-size: 15.32142857px;
   font-weight: 400;
 }
+@media (min-width: 1500px) {
+  .caption {
+    font-size: 12.10714285px;
+  }
+}
+@media (min-width: 1900px) {
+  .caption {
+    font-size: 15.32142857px;
+  }
+}
 .button {
-  font-size: 17.875px;
   font-weight: 500;
   text-transform: uppercase;
+}
+@media (min-width: 1500px) {
+  .button {
+    font-size: 14.12499999px;
+  }
+}
+@media (min-width: 1900px) {
+  .button {
+    font-size: 17.875px;
+  }
 }
 body,
 html {
   height: 100%;
-  width: 1539px;
   box-sizing: border-box;
   margin: 0 auto;
   background-color: #212121;
+}
+@media (min-width: 1500px) {
+  body,
+  html {
+    width: 1280px;
+  }
+}
+@media (min-width: 1900px) {
+  body,
+  html {
+    width: 1539px;
+  }
 }
 .g-full,
 .grid-full {
@@ -150,21 +268,50 @@ table {
 table caption {
   text-align: left;
   padding: 12px;
-  font-size: 25.53571428px;
   font-weight: 500;
   border-bottom: 1px solid #FAFAFA;
+}
+@media (min-width: 1500px) {
+  table caption {
+    font-size: 20.17857142px;
+  }
+}
+@media (min-width: 1900px) {
+  table caption {
+    font-size: 25.53571428px;
+  }
 }
 tr td,
 tr th {
   padding: 6px;
   text-align: right;
-  font-size: 16.59821428px;
   font-weight: 500;
   border-bottom: 1px solid #9E9E9E;
 }
+@media (min-width: 1500px) {
+  tr td,
+  tr th {
+    font-size: 13.11607142px;
+  }
+}
+@media (min-width: 1900px) {
+  tr td,
+  tr th {
+    font-size: 16.59821428px;
+  }
+}
 tr td {
-  font-size: 16.59821428px;
   font-weight: 400;
+}
+@media (min-width: 1500px) {
+  tr td {
+    font-size: 13.11607142px;
+  }
+}
+@media (min-width: 1900px) {
+  tr td {
+    font-size: 16.59821428px;
+  }
 }
 tbody tr:hover {
   background-color: #757575;
