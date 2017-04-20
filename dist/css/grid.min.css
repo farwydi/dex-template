@@ -1,3 +1,52 @@
+h1,
+.display-4 {
+  font-size: 142.99999997px;
+  font-weight: 300;
+}
+h2,
+.display-3 {
+  font-size: 71.49999998px;
+  font-weight: 400;
+}
+h3,
+.display-2 {
+  font-size: 57.45535713px;
+  font-weight: 400;
+}
+h4,
+.display-1 {
+  font-size: 43.41071428px;
+  font-weight: 400;
+}
+.headling {
+  font-size: 30.64285714px;
+  font-weight: 400;
+}
+.title {
+  font-size: 25.53571428px;
+  font-weight: 500;
+}
+.subheading {
+  font-size: 19.15178571px;
+  font-weight: 400;
+}
+.body-2 {
+  font-size: 16.59821428px;
+  font-weight: 500;
+}
+.body-1 {
+  font-size: 16.59821428px;
+  font-weight: 400;
+}
+.caption {
+  font-size: 15.32142857px;
+  font-weight: 400;
+}
+.button {
+  font-size: 17.875px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
 body,
 html {
   height: 100%;
@@ -10,9 +59,8 @@ html {
 }
 .g-full,
 .grid-full {
-  margin: 0 12px;
   background-color: #424242;
-  padding: 6px 0;
+  padding: 6px;
   box-shadow: 0 0 8px -1px rgba(0, 0, 0, 0.75);
 }
 .g-row,
@@ -24,7 +72,6 @@ html {
 .g6,
 .grid-col-6 {
   margin: 0 12px;
-  padding: 6px;
   -ms-flex-positive: 1;
       flex-grow: 1;
 }
@@ -32,7 +79,6 @@ html {
 .g5,
 .grid-col-5 {
   margin: 0 12px;
-  padding: 6px;
   -ms-flex-positive: 2;
       flex-grow: 2;
 }
@@ -40,7 +86,6 @@ html {
 .g4,
 .grid-col-4 {
   margin: 0 12px;
-  padding: 6px;
   -ms-flex-positive: 3;
       flex-grow: 3;
 }
@@ -48,7 +93,6 @@ html {
 .g3,
 .grid-col-3 {
   margin: 0 12px;
-  padding: 6px;
   -ms-flex-positive: 4;
       flex-grow: 4;
 }
@@ -56,7 +100,6 @@ html {
 .g2,
 .grid-col-2 {
   margin: 0 12px;
-  padding: 6px;
   -ms-flex-positive: 5;
       flex-grow: 5;
 }
@@ -64,7 +107,6 @@ html {
 .g1,
 .grid-col-1 {
   margin: 0 12px;
-  padding: 6px;
   -ms-flex-positive: 6;
       flex-grow: 6;
 }
@@ -77,11 +119,30 @@ html {
   -ms-flex-positive: 1;
       flex-grow: 1;
   margin: 0 12px;
-  padding: 6px;
 }
 .t-full,
 .table-full {
   width: 100%;
+}
+.card {
+  background-color: #616161;
+  padding: 12px;
+  margin: 12px 0;
+  box-shadow: 0 0 8px -1px rgba(0, 0, 0, 0.75);
+  font-size: 18px;
+}
+.card-accent {
+  background-color: #FF5722;
+  color: #212121;
+}
+.card-header {
+  font-size: 21px;
+  font-weight: bold;
+  padding: 6px;
+  border-bottom: 2px solid #212121;
+}
+table {
+  border-collapse: collapse;
 }
 table caption {
   text-align: left;
@@ -96,7 +157,7 @@ tr th {
   border-bottom: 1px solid #9E9E9E;
 }
 tbody tr:hover {
-  background-color: #616161;
+  background-color: #757575;
   cursor: pointer;
   color: #FAFAFA;
 }
