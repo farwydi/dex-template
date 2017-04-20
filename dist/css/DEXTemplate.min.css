@@ -1,0 +1,105 @@
+body,
+html {
+  height: 100%;
+  width: 1539px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background-color: #212121;
+  color: #FAFAFA;
+  font-family: 'Roboto', sans-serif;
+}
+.g-full,
+.grid-full {
+  margin: 0 12px;
+  background-color: #424242;
+  padding: 6px 0;
+  box-shadow: 0 0 8px -1px rgba(0, 0, 0, 0.75);
+}
+.g-row,
+.grid-row {
+  display: -ms-flexbox;
+  display: flex;
+}
+.g-col-6,
+.g6,
+.grid-col-6 {
+  margin: 0 12px;
+  padding: 6px;
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+}
+.g-col-5,
+.g5,
+.grid-col-5 {
+  margin: 0 12px;
+  padding: 6px;
+  -ms-flex-positive: 2;
+      flex-grow: 2;
+}
+.g-col-4,
+.g4,
+.grid-col-4 {
+  margin: 0 12px;
+  padding: 6px;
+  -ms-flex-positive: 3;
+      flex-grow: 3;
+}
+.g-col-3,
+.g3,
+.grid-col-3 {
+  margin: 0 12px;
+  padding: 6px;
+  -ms-flex-positive: 4;
+      flex-grow: 4;
+}
+.g-col-2,
+.g2,
+.grid-col-2 {
+  margin: 0 12px;
+  padding: 6px;
+  -ms-flex-positive: 5;
+      flex-grow: 5;
+}
+.g-col-1,
+.g1,
+.grid-col-1 {
+  margin: 0 12px;
+  padding: 6px;
+  -ms-flex-positive: 6;
+      flex-grow: 6;
+}
+.acc {
+  background-color: #FF5722;
+  box-shadow: 0 0 8px -1px rgba(0, 0, 0, 0.75);
+}
+.g-t,
+.grid-table {
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  margin: 0 12px;
+  padding: 6px;
+}
+.t-full,
+.table-full {
+  width: 100%;
+}
+table caption {
+  text-align: left;
+  padding: 12px;
+  font-size: 21px;
+  border-bottom: 1px solid #FAFAFA;
+}
+tr td,
+tr th {
+  padding: 6px;
+  text-align: right;
+  border-bottom: 1px solid #9E9E9E;
+}
+tbody tr:hover {
+  background-color: #616161;
+  cursor: pointer;
+  color: #FAFAFA;
+}
+.left {
+  text-align: left;
+}

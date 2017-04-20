@@ -1,23 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-ng-app="DEXTemplategrid-rowidSystem">
 
 <head>
     <meta charset="UTF-8">
-    <title>DEX Temaplte GRID System</title>
+    <title>DEX Temaplte grid-rowID System</title>
+
+    <link rel="stylesheet" href="../dist/css/DEXTemplate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 
-<body data-ng-app="DEXTemplateGridSystem">
-    <div class="gr">
-        <div class="g12"></div>
-        <div class="g6"></div>
-        <div class="g6"></div>
+<body>
+    <div class="grid-full">
+        <div class="grid-row">
+            <div class="grid-col-6 acc">6</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-col-5">5</div>
+            <div class="grid-col-1">1</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-col-4 acc">4</div>
+            <div class="grid-col-2 acc">2</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-col-3">3</div>
+            <div class="grid-col-3">3</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-col-2">2</div>
+            <div class="grid-col-2 acc">2</div>
+            <div class="grid-col-2">2</div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-col-1 acc">1</div>
+            <div class="grid-col-1">1</div>
+            <div class="grid-col-1">1</div>
+            <div class="grid-col-1">1</div>
+            <div class="grid-col-1 acc">1</div>
+            <div class="grid-col-1 acc">1</div>
+        </div>
+        <div class="grid-table">
+            <table class="table-full">
+                <caption>Monthly savings</caption>
+                <thead>
+                    <tr>
+                        <th class="left">First Name</th>
+                        <th class="left">Last Name</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="left">Peter</td>
+                        <td class="left">Griffin</td>
+                        <td>$100</td>
+                    </tr>
+                    <tr>
+                        <td class="left">Lois</td>
+                        <td class="left">Griffin</td>
+                        <td>$150</td>
+                    </tr>
+                    <tr>
+                        <td class="left">Joe</td>
+                        <td class="left">Swanson</td>
+                        <td>$300</td>
+                    </tr>
+                    <tr>
+                        <td class="left">Cleveland</td>
+                        <td class="left">Brown</td>
+                        <td>$250</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular.min.js" integrity="sha256-jFCqhWdzGFjoG8/SAncY2afI/Xv1TPSWSZrb9dpXQbk="
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular.min.js" integrid-rowity="sha256-jFCqhWdzGFjoG8/SAncY2afI/Xv1TPSWSZrb9dpXQbk="
         crossorigin="anonymous"></script>
 
     <script type="text/javascript">
-        angular.module('DEXTemplateGridSystem', []);
+        angular.module('DEXTemplategrid-rowidSystem', []);
     </script>
 </body>
 

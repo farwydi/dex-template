@@ -1,0 +1,162 @@
+@width: 1539px;
+@margin: 12px;
+@padding: 6px;
+
+// color
+@accentColor: #FF5722;
+@fontColor: #FAFAFA;
+@gray900Color: #212121;
+@gray800Color: #424242;
+@gray700Color: #616161;
+@gray600Color: #757575;
+@gray500Color: #9E9E9E;
+@gray400Color: #BDBDBD;
+@gray300Color: #E0E0E0;
+@gray200Color: #EEEEEE;
+@gray100Color: #F5F5F5;
+@gray50Color: #FAFAFA;
+
+body,
+html {
+  height: 100%;
+  width: @width;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background-color: @gray900Color;
+  color: @fontColor;
+  font-family: 'Roboto', sans-serif;
+}
+
+.g-full,
+.grid-full {
+  margin: 0 @margin;
+  background-color: @gray800Color;
+  padding: @padding 0;
+  box-shadow: 0 0 8px -1px rgba(0,0,0,0.75);
+}
+
+.g-row,
+.grid-row {
+  display: flex;
+}
+
+.g-col-6,
+.g6,
+.grid-col-6 {
+  margin: 0 @margin;
+  padding: @padding;
+  flex-grow: 1;
+}
+
+.g-col-5,
+.g5,
+.grid-col-5 {
+  margin: 0 @margin;
+  padding: @padding;
+  flex-grow: 2;
+}
+
+.g-col-4,
+.g4,
+.grid-col-4 {
+  margin: 0 @margin;
+  padding: @padding;
+  flex-grow: 3;
+}
+
+.g-col-3,
+.g3,
+.grid-col-3 {
+  margin: 0 @margin;
+  padding: @padding;
+  flex-grow: 4;
+}
+
+.g-col-2,
+.g2,
+.grid-col-2 {
+  margin: 0 @margin;
+  padding: @padding;
+  flex-grow: 5;
+}
+
+.g-col-1,
+.g1,
+.grid-col-1 {
+  margin: 0 @margin;
+  padding: @padding;
+  flex-grow: 6;
+}
+
+.acc {
+  background-color: @accentColor;
+  box-shadow: 0 0 8px -1px rgba(0,0,0,0.75);
+}
+
+.g-t,
+.grid-table {
+  flex-grow: 1;
+  margin: 0 @margin;
+  padding: @padding;
+}
+
+.t-full,
+.table-full {
+  width: 100%;
+}
+
+table {
+  caption {
+    text-align: left;
+    padding: @padding*2;
+    font-size: 21px;
+    border-bottom: 1px solid @fontColor;
+  }
+}
+
+tr td,
+tr th {
+  padding: @padding;
+  text-align: right;
+  border-bottom: 1px solid @gray500Color;
+}
+
+tbody tr:hover {
+  background-color: @gray700Color;
+  cursor: pointer;
+  color: @gray50Color;
+}
+
+.left {
+  text-align: left;
+}
+
+// thead {
+//   text-align: right;
+//   padding: @padding;
+//   border-bottom: 1px solid @fontColor;
+
+//   .left {
+//     text-align: left;
+//   }
+// }
+
+// tbody {
+//   .left {
+//     text-align: left;
+//   }
+
+//   tr {
+//     border-bottom: 1px solid @fontColor;
+//     padding: @padding;
+
+//     &:hover {
+//       background-color: @accentColor;
+//       cursor: pointer;
+//     }
+
+//     td {
+//       text-align: right;
+//     }
+//   }
+// }
