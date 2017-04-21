@@ -288,3 +288,95 @@ button:focus {
 .dex-grid-row button {
   margin-right: 6px;
 }
+form {
+  color: #FAFAFA;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+@media (min-width: 1200px) {
+  form {
+    font-size: 14.12499999px;
+  }
+}
+@media (min-width: 1580px) {
+  form {
+    font-size: 14.12499999px;
+  }
+}
+@media (min-width: 1900px) {
+  form {
+    font-size: 17.875px;
+  }
+}
+form input[type=submit] {
+  background-color: #bdbdbd;
+  padding: 6px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #212121;
+  border: 0;
+  box-shadow: 0 0 8px -1px rgba(0, 0, 0, 0.75);
+  -ms-flex-negative: 5;
+      flex-shrink: 5;
+}
+@media (min-width: 1200px) {
+  form input[type=submit] {
+    font-size: 14.12499999px;
+  }
+}
+@media (min-width: 1580px) {
+  form input[type=submit] {
+    font-size: 14.12499999px;
+  }
+}
+@media (min-width: 1900px) {
+  form input[type=submit] {
+    font-size: 17.875px;
+  }
+}
+form input[type=submit]:hover {
+  color: #FAFAFA;
+  background-color: #FF5722;
+  cursor: pointer;
+  box-shadow: 0 0 16px -1px rgba(0, 0, 0, 0.75);
+}
+form input[type=submit]:active {
+  background-color: #ee3900;
+}
+form input[type=submit]:focus {
+  outline-color: #FF5722;
+}
+form input[type=text],
+form textarea {
+  border: 0;
+  box-shadow: 0 0 8px -1px rgba(0, 0, 0, 0.75);
+  padding: 6px;
+  background-color: #9e9e9e;
+  color: #212121;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+form input[type=text]:focus,
+form textarea:focus {
+  outline-color: #FF5722;
+  box-shadow: 0 0 16px -1px rgba(0, 0, 0, 0.75);
+}
+@media (min-width: 1200px) {
+  form input[type=text],
+  form textarea {
+    font-size: 14.12499999px;
+  }
+}
+@media (min-width: 1580px) {
+  form input[type=text],
+  form textarea {
+    font-size: 14.12499999px;
+  }
+}
+@media (min-width: 1900px) {
+  form input[type=text],
+  form textarea {
+    font-size: 17.875px;
+  }
+}

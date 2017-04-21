@@ -1,0 +1,31 @@
+@import "color";
+@import "size";
+@import "typography";
+@import "button";
+
+form {
+  color: @fontColor;
+  .dex-button-text();
+
+  input[type=submit] {
+      .dex-button();
+  }
+
+  input[type=text],
+  textarea {
+    border: 0;
+    box-shadow: @box-shadow;
+    padding: @padding;
+    background-color: @bg500;
+
+    &:focus {
+      outline-color: @accentColor;
+      box-shadow: @box-shadow-x2;
+    }
+
+    color: @bg900;
+    font-family: @font-family;
+    font-weight: 500;
+    .dex-button-text();
+  }
+}

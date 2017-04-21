@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <title>DEX Temaplte grid-rowID System</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css" integrity="sha256-VbcxqgMGQYm3q8qZMd63uETHXXZkqs7ME1bEvAY1xK8="
+        crossorigin="anonymous" />
+
     <link rel="stylesheet" href="../dist/css/DEXTemplate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -12,6 +15,30 @@
 
 <body>
     <div class="grid-full">
+        <div class="test-dex-grid-container card">
+            <div class="test-box dex-flex-1">box</div>
+            <div class="test-box dex-flex-6">box</div>
+            <div class="test-box dex-flex-1">box</div>
+        </div>
+        <div class="test-dex-grid-container card">
+            <div class="test-box">box</div>
+            <div class="test-box">box</div>
+            <div class="test-box">box</div>
+            <div class="test-box">box</div>
+            <div class="test-box">box</div>
+            <div class="test-box">box</div>
+            <div class="test-box">box</div>
+            <div class="test-box-big">box</div>
+            <div class="test-box">box</div>
+            <div class="test-box">box</div>
+            <div class="test-box">box</div>
+            <div class="test-box">box</div>
+            <div class="test-box">box</div>
+            <div class="test-box">box</div>
+            <div class="test-box">box</div>
+            <div class="test-box">box</div>
+            <div class="test-box">box</div>
+        </div>
         <div class="grid-row">
             <div class="grid-col-6">
                 <div class="card">
@@ -31,13 +58,38 @@
         </div>
         <div class="grid-row">
             <div class="grid-col-5">
-                <div class="card">1</div>
+                <div class="dex-grid-row card">
+                    <button>Button 1</button>
+                </div>
             </div>
             <div class="grid-col-1">
+                <div class="dex-grid-row card">
+                    <button>Button 1</button>
+                    <button>Button 2</button>
+                </div>
+            </div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-col-6">
                 <div class="card">
-                    <div class="button">But</div>
-                    <div class="button">But</div>
-                    <div class="button">But</div>
+                    <form>
+                        Name: <input type="text" name="name">
+                        <input type="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="grid-row">
+            <div class="grid-col-6">
+                <div class="dex-grid-column card">
+                    <div class="dex-grid-row">
+                        <button>Button 1</button>
+                        <button>Button 2</button>
+                    </div>
+                    <form>
+                        <input type="text" name="name" class="width-full">
+                        <input type="submit">
+                    </form>
                 </div>
             </div>
         </div>
@@ -52,7 +104,7 @@
         <div class="grid-row">
             <div class="grid-col-3">
                 <div class="card card-accent">
-                    <div class="headling">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, velit.</div>
+                    <div class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, velit.</div>
                     <p class="body-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium optio, quaerat libero quae eveniet
                         corrupti! Quaerat iusto suscipit eum nemo accusantium magni velit sed reprehenderit quod ab fuga,
                         a ipsam quis odit, in inventore enim fugiat soluta aliquid cupiditate dolorum, ipsa nesciunt! Tempore,
@@ -94,7 +146,7 @@
             </div>
             <div class="grid-col-3">
                 <div class="card">
-                    <div class="headling">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, porro, voluptates.</div>
+                    <div class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, porro, voluptates.</div>
                     <p class="body-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet nobis enim dolores pariatur quidem
                         et perferendis nihil, omnis necessitatibus excepturi dignissimos reiciendis corporis id est molestiae
                         sequi recusandae blanditiis tempora placeat nesciunt ea distinctio deleniti repudiandae inventore.
@@ -208,7 +260,15 @@
         crossorigin="anonymous"></script>
 
     <script type="text/javascript">
-        angular.module('DEXTemplategrid-rowidSystem', []);
+        angular.module('DEXTemplategrid-rowidSystem', [])
+            .directive('dexFlex', function() {
+                return {
+                    restrict: 'A',
+                    link: function(scope, element, attrs) {
+                        element.addClass('dex-flex-' + attrs.dexFlex);
+                    }
+                };
+            });
     </script>
 </body>
 

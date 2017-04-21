@@ -7,7 +7,7 @@ html {
   height: 100%;
   box-sizing: border-box;
   margin: 0 auto;
-  background-color: @gray900Color;
+  background-color: @bg900;
   @media (min-width: @desktop-small) {
     width: @desktop-small-width;
   }
@@ -19,11 +19,111 @@ html {
   }
 }
 
+.test-box {
+  padding: 42px;
+  margin: 12px;
+  background-color: @bg500;
+  flex-basis: auto;
+  flex-grow: 0;
+  flex-shrink: 1;
+}
+
+.dex-flex-1 {
+  flex-grow: 1;
+}
+
+.dex-flex-2 {
+  flex-grow: 2;
+}
+
+.dex-flex-3 {
+  flex-grow: 3;
+}
+
+.dex-flex-4 {
+  flex-grow: 4;
+}
+
+.dex-flex-5 {
+  flex-grow: 5;
+}
+
+.dex-flex-6 {
+  flex-grow: 6;
+}
+
+.test-box-big {
+  .test-box();
+  padding: 52px;
+  // flex-basis: auto;
+  flex-grow: 1;
+  // flex-shrink: 1;
+}
+
+.test-box-big2 {
+  .test-box-big();
+  flex-grow: 2;
+}
+
+.test-dex-grid-container {
+  display: flex;
+
+  flex-direction: row-reverse;
+  flex-direction: column-reverse;
+  flex-direction: column;
+
+  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
+
+  align-content: center;
+  align-content: space-between;
+  align-content: space-around;
+  align-content: flex-end;
+  align-content: flex-start;
+
+  justify-content: flex-start;
+  justify-content: flex-end;
+  justify-content: center;
+  justify-content: space-between;
+  justify-content: space-around;
+
+  align-items: flex-start;
+  align-items: flex-end;
+  align-items: center;
+  align-items: baseline;
+
+  // flex-wrap: nowrap;
+  // flex-direction: row;
+  // align-content: stretch;
+  // justify-content: stretch;
+  // align-items: stretch;
+
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+
+  height: 320px;
+}
+
 .g-full,
 .grid-full {
-  background-color: @gray800Color;
+  background-color: @bg800;
   padding: @padding;
-  box-shadow: 0 0 8px -1px rgba(0,0,0,0.75);
+  box-shadow: @box-shadow;
+}
+
+.dex-grid-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.dex-grid-row {
+  display: flex;
+  flex-direction: row;
 }
 
 .g-row,
@@ -75,7 +175,7 @@ html {
 
 .acc {
   background-color: @accentColor;
-  box-shadow: 0 0 8px -1px rgba(0,0,0,0.75);
+  box-shadow: @box-shadow;
 }
 
 .g-t,
@@ -90,22 +190,22 @@ html {
 }
 
 .card {
-  background-color: @gray700Color;
+  background-color: @bg700;
   padding: @padding*2;
   margin: @margin 0;
-  box-shadow: 0 0 8px -1px rgba(0,0,0,0.75);
+  box-shadow: @box-shadow;
   font-size: 18px;
 
   &-accent {
     background-color: @accentColor;
-    color: @gray900Color;
+    color: @bg900;
   }
 
   &-header {
     font-size: 21px;
     font-weight: bold;
     padding: @padding;
-    border-bottom: 2px solid @gray900Color;
+    border-bottom: 2px solid @bg900;
   }
 }
 
@@ -125,7 +225,7 @@ tr th {
   padding: @padding;
   text-align: right;
   .body-2();
-  border-bottom: 1px solid @gray500Color;
+  border-bottom: 1px solid @bg500;
 }
 
 tr td {
@@ -133,41 +233,11 @@ tr td {
 }
 
 tbody tr:hover {
-  background-color: @gray600Color;
+  background-color: @bg600;
   cursor: pointer;
-  color: @gray50Color;
+  color: @bg50;
 }
 
 .left {
   text-align: left;
 }
-
-// thead {
-//   text-align: right;
-//   padding: @padding;
-//   border-bottom: 1px solid @fontColor;
-
-//   .left {
-//     text-align: left;
-//   }
-// }
-
-// tbody {
-//   .left {
-//     text-align: left;
-//   }
-
-//   tr {
-//     border-bottom: 1px solid @fontColor;
-//     padding: @padding;
-
-//     &:hover {
-//       background-color: @accentColor;
-//       cursor: pointer;
-//     }
-
-//     td {
-//       text-align: right;
-//     }
-//   }
-// }

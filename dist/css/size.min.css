@@ -1,0 +1,4 @@
+.width-full {
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+}
